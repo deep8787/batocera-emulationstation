@@ -558,12 +558,16 @@ void InputManager::doOnFinish()
 
 std::string InputManager::getConfigPath()
 {
-	return Utils::FileSystem::getEsConfigPath() + "/es_input.cfg";
+	std::string path = Utils::FileSystem::getHomePath();
+	path += "/.emulationstation/es_input.cfg";
+	return path;
 }
 
 std::string InputManager::getTemporaryConfigPath()
 {
-	return Utils::FileSystem::getEsConfigPath() + "/es_last_input.cfg";
+	std::string path = Utils::FileSystem::getHomePath();
+	path += "/.emulationstation/es_temporaryinput.cfg";
+	return path;
 }
 
 bool InputManager::initialized() const
