@@ -242,8 +242,9 @@ bool parseArgs(int argc, char* argv[])
 
 bool verifyHomeFolderExists()
 {
-	//make sure the config directory exists	
-	std::string configDir = Utils::FileSystem::getEsConfigPath();
+	//make sure the config directory exists
+	std::string home = Utils::FileSystem::getHomePath();
+	std::string configDir = home + "/.emulationstation";
 	if(!Utils::FileSystem::exists(configDir))
 	{
 		std::cout << "Creating config directory \"" << configDir << "\"\n";
