@@ -1674,7 +1674,7 @@ const std::shared_ptr<ThemeData>& ThemeData::getDefault()
 	{
 		theme = std::shared_ptr<ThemeData>(new ThemeData());
 
-		const std::string path = Utils::FileSystem::getEsConfigPath() + "/es_theme_default.xml";
+		const std::string path = Utils::FileSystem::getHomePath() + "/.emulationstation/es_theme_default.xml";
 		if(Utils::FileSystem::exists(path))
 		{
 			try
