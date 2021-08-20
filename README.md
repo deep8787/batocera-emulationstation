@@ -4,41 +4,42 @@ ________________________________________________________________________________
 
 Install guide:
 
-  sudo nano /home/pi/RetroPie-Setup/scriptmodules/supplementary/emulationstation-custom.sh
+    sudo nano /home/pi/RetroPie-Setup/scriptmodules/supplementary/emulationstation-custom.sh
   
 Copy and paste the following code:
-#!/usr/bin/env bash
+     
+    #!/usr/bin/env bash
 
-rp_module_id="emulationstation-custom"
-rp_module_desc="A modified version of EmulationStation."
-rp_module_section="core"
-rp_module_repo="git https://github.com/deep8787/batocera-emulationstation master"
-rp_module_flags="frontend"
+    rp_module_id="emulationstation-custom"
+    rp_module_desc="A modified version of EmulationStation."
+    rp_module_section="core"
+    rp_module_repo="git https://github.com/deep8787/batocera-emulationstation master"
+    rp_module_flags="frontend"
 
 
-  function depends_emulationstation-custom() {
+    function depends_emulationstation-custom() {
       depends_emulationstation
-  }
+    }
 
-  function sources_emulationstation-custom() {
+    function sources_emulationstation-custom() {
       sources_emulationstation
-  }
+    }
 
-  function build_emulationstation-custom() {
+    function build_emulationstation-custom() {
       build_emulationstation
-  }
+    }
 
-  function install_emulationstation-custom() {
+    function install_emulationstation-custom() {
       install_emulationstation
-  }
+    }
 
-  function configure_emulationstation-custom() {
+    function configure_emulationstation-custom() {
       configure_emulationstation
-  }
+    }
 
-  function gui_emulationstation-custom() {
+    function gui_emulationstation-custom() {
       gui_emulationstation
-  }
+    }
   
 Ctrl+X and press Y to save
 
@@ -46,12 +47,12 @@ Now go into the retropie_setup.sh and go to Manage packages, Core and you should
 
 This wont boot yet, you will need to make one more edit:
 
-  sudo nano /opt/retropie/configs/all/autostart.sh
+    sudo nano /opt/retropie/configs/all/autostart.sh
   
 And replace "emulationstation #auto" with the following 2 lines:
 
-  cd /opt/retropie/supplementary/emulationstation-custom
-  ./emulationstation
+    cd /opt/retropie/supplementary/emulationstation-custom
+    ./emulationstation
 
 Ctrl+X and press Y to save
 
