@@ -7,12 +7,12 @@ Install guide:
   sudo nano /home/pi/RetroPie-Setup/scriptmodules/supplementary/emulationstation-custom.sh
   
 Copy and paste the following code:
-  #!/usr/bin/env bash
+#!/usr/bin/env bash
 
-  rp_module_id="emulationstation-custom"
-  rp_module_desc="A modified version of EmulationStation."
-  rp_module_section="core"
-  rp_module_repo="git https://github.com/deep8787/batocera-emulationstation master"
+rp_module_id="emulationstation-custom"
+rp_module_desc="A modified version of EmulationStation."
+rp_module_section="core"
+rp_module_repo="git https://github.com/deep8787/batocera-emulationstation master"
   rp_module_flags="frontend"
 
 
