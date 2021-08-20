@@ -4,6 +4,8 @@ ________________________________________________________________________________
 
 Install guide:
 
+First we gotta create the install option within retropie_setup.sh:
+
     sudo nano /home/pi/RetroPie-Setup/scriptmodules/supplementary/emulationstation-custom.sh
   
 Copy and paste the following code:
