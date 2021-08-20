@@ -13,7 +13,7 @@ rp_module_id="emulationstation-custom"
 rp_module_desc="A modified version of EmulationStation."
 rp_module_section="core"
 rp_module_repo="git https://github.com/deep8787/batocera-emulationstation master"
-  rp_module_flags="frontend"
+rp_module_flags="frontend"
 
 
   function depends_emulationstation-custom() {
