@@ -58,4 +58,4 @@ And replace "emulationstation #auto" with the following 2 lines:
 
 Ctrl+X and press Y to save
 
-Reboot and it should load up into the new EmulationStation. FYI this is a work in progress, most of the Start menu items dont work yet.
+Reboot and it should load up into the new EmulationStation. FYI this is a work in progress, most of the Start menu items dont work yet. Nor does booting roms. All in good time, if anyone wants to help, they are more then welcome to!
