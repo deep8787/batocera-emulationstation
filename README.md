@@ -51,7 +51,11 @@ This wont boot yet, you will need to make one more edit:
 
     sudo nano /opt/retropie/configs/all/autostart.sh
   
-And replace "emulationstation #auto" with the following 2 lines:
+And replace 
+
+    emulationstation #auto
+
+with the following 2 lines:
 
     cd /opt/retropie/supplementary/emulationstation-custom
     ./emulationstation
